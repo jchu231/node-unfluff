@@ -498,7 +498,7 @@ isTableAndNoParaExist = (doc, e) ->
       doc(p).remove()
 
   subParagraphs2 = e.find("p")
-  if subParagraphs2.length == 0 && !(e[0].name in ["td", "ul", "ol"])
+  if subParagraphs2.length == 0 && !(e[0].name in ["td", "ul", "ol", "blockquote"])
     return true
   else
     return false

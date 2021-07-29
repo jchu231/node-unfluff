@@ -56,7 +56,7 @@ convertToText = (doc, topNode) ->
       hangingText += node.text()
       # Same as 'continue'
       return true
-    else if nodeName == "ul"
+    else if nodeName == "ul" || nodeName == "ol"
       hangingText += ulToText(doc, node)
       return true
 
