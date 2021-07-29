@@ -103,6 +103,7 @@ removeNegativescoresNodes = (doc, topNode) ->
     score = parseInt(item.attr('gravityScore')) || 0
 
     if score < 1
+      console.log("removing: ", item)
       doc(item).remove()
 
 # remove paragraphs that have less than x number of words,
